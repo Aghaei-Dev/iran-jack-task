@@ -1,0 +1,156 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay');
+/* make it local */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green-500: #00b7c3;
+
+  --purple-500: #5b5fc7;
+
+  --text-100: #f0f0f0;
+  --text-300: #616161;
+  --text-500: #242424;
+
+  --border-1: #e0e0e0;
+
+  --bg-white: #fff;
+  --bg-card: #fff;
+
+  --max-width: 1370px;
+
+  --text-white: #ffffff;
+
+  --radius: 1rem;
+  --md-radius: 0.5rem;
+  --sm-radius: 0.25rem;
+
+  --primary: 'SF Pro Display';
+
+  --transition: all 0.3s ease-out;
+}
+
+::selection {
+  background: inherit;
+  color: inherit;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  &::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--border-1);
+    border-radius: 50rem;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-300);
+  }
+}
+
+input,
+textarea,
+button {
+  outline: 0;
+  border: 0;
+  background-color: unset;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+svg {
+  width: 24px;
+}
+html,
+body {
+  background: var(--bg-white);
+  color: var(--text-500);
+}
+body {
+  font-family: var(--primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  margin: auto;
+  /* max-width: var(--max-width); */
+  overflow-x: hidden;
+}
+
+/* global classes */
+
+.fixed-width {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  overflow-x: hidden;
+}
+@media screen and (width <= 1270px) {
+  .fixed-width {
+    max-width: 90vw;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.gap-0_5 {
+  gap: 0.25rem;
+}
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+.gap-3 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+.fa {
+  font-feature-settings: 'ss02';
+}
