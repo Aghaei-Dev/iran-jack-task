@@ -10,12 +10,14 @@ export default function Wrapper() {
       <div className='layout-1'>
         <MainSidebar />
         <MobileHeader />
-        <section>
+        <section className='outer'>
           <SubHeader />
           <BottomNavigation array={bottomNav} />
           <div className='layout-2'>
             <SubSidebar />
-            <Outlet />
+            <section className='outlet'>
+              <Outlet />
+            </section>
           </div>
         </section>
       </div>
@@ -24,7 +26,7 @@ export default function Wrapper() {
 }
 
 const Main = styled('main')(() => ({
-  // background: 'red',
+  height: 'calc(100dvh - 49px)',
   '.layout-1': {
     display: 'grid',
     gridTemplateColumns: '68px auto',
@@ -32,11 +34,16 @@ const Main = styled('main')(() => ({
       display: 'initial',
     },
   },
+  '.outer': { height: 'calc(100dvh - 49px)' },
   '.layout-2': {
+    height: 'calc(100dvh - 162px)',
     display: 'grid',
     gridTemplateColumns: '180px auto',
     '@media (width < 814px)': {
       display: 'initial',
     },
+  },
+  '.outlet': {
+    overflowY: 'scroll',
   },
 }))
