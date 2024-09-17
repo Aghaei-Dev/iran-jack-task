@@ -11,8 +11,8 @@ const data = {
       pid: 1,
       text: 'Option 1',
       children: [
-        { id: 1, pid: 4, text: 'Item 1' },
-        { id: 2, pid: 4, text: 'Item 2' },
+        { id: 1, pid: 2, text: 'Item 1' },
+        { id: 2, pid: 2, text: 'Item 2' },
       ],
     },
     {

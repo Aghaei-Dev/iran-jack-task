@@ -1,9 +1,15 @@
-# React + Vite
+احتمالا یکم سختتون باشه انگلیسی بخونید فارسی نوشتم
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یه چن تا باگ احتمالا تو نگاه اول ببینید .
 
-Currently, two official plugins are available:
+تب ها و نوار زیرشون وقتی که ری سایز میکنید بهم میریزن . برای اینک درست بشن یا باید رفرش کنید یا تب رو عوض کنید . دلیلش: چون یوزر ریسایز نمیکنه اینجور . فقط تو دیوایس خودش نگاه میکنه . راه حلش یکم مشکل پرفورمنسی داره . تمام تب ها همینن . باید رو کل ویندو یه ایونت ریسایز گذاشت گ من به خاطر ترید افش نمیزارم .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# iran-jack-task
+
+چک باکس هم چون ولیو و هندلر ندارن رو هرکدوم کلیک کنید فقط اولی فعال میشه . مشکلی ندارن . 
+
+بقیه چیزا اوکین 
+
+یه نکته دیگه هم که هست چون میخواستم مهارتم معلوم شه پیور نوشتم . 
+فرق هست بین کسی ک از چهارتا کتابخونه استفاده میکنه و چنین یو ایی رو پیاده میکنه تا من ک پیور نوشتم . 
+
+یه نگاه به پکیج های نصبی بندازید .

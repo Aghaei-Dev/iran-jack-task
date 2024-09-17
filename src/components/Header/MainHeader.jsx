@@ -1,8 +1,7 @@
 import styled from '@emotion/styled'
 import { ArrowLeft, ArrowRight, Close, Logo, Maximize, Minimize, More, Search } from '../../assets/icons'
-import { Avatar } from '../Assistance'
+import { Avatar, Input } from '../'
 import { avatar } from '../../assets/images'
-import { Input } from '..'
 
 export default function MainHeader() {
   return (
