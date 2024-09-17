@@ -1,9 +1,7 @@
 import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge'
-
 import styled from '@emotion/styled'
-import { ChartCard } from '../components'
-import { Area, Bars, GroupBars, Pie } from '../components/Charts'
-import { periods } from '../assets/constants'
+import { ChartCard, Area, Bars, GroupBars, Pie } from '../components'
+import { periods, tabs } from '../assets/constants'
 
 export default function Home() {
   return (
@@ -34,36 +32,35 @@ export default function Home() {
         }
         desc='Description'
         title='Card title'
-        icons={'DoDisturb'}
       />
+
       <ChartCard
         singleIcon
         chart={<Bars height={300} />}
         desc='Description'
         title='Card title'
-        icons={'DoDisturb'}
       />
       <ChartCard
         singleIcon
         chart={<Area height={300} />}
         desc='Description'
         title='Card title'
-        icons={'DoDisturb'}
       />
 
       <ChartCard
-        singleIcon
+        tabs
+        array={periods}
         chart={<Pie height={300} />}
         desc='Description'
         title='Card title'
-        icons={'DoDisturb'}
       />
       <ChartCard
+        tabs
+        array={tabs}
         singleIcon
         chart={<GroupBars height={300} />}
         desc='Description'
         title='Card title'
-        icons={'DoDisturb'}
       />
     </ChartWrapper>
   )

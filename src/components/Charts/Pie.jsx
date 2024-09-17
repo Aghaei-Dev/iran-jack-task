@@ -3,10 +3,11 @@ import { useDrawingArea } from '@mui/x-charts/hooks'
 import { styled } from '@mui/material/styles'
 
 const data = [
-  { value: 5, label: 'A' },
-  { value: 10, label: 'B' },
-  { value: 15, label: 'C' },
+  { value: 100, label: 'A' },
+  { value: 50, label: 'B' },
+  { value: 30, label: 'C' },
   { value: 20, label: 'D' },
+  { value: 60, label: 'D' },
 ]
 
 const StyledText = styled('text')(({ theme }) => ({
@@ -31,10 +32,12 @@ function PieCenterLabel({ children }) {
 export default function Pie({ ...props }) {
   return (
     <PieChart
-      series={[{ data, innerRadius: 80, paddingAngle: 1 }]}
+      series={[{ data, innerRadius: 110, paddingAngle: 1 }]}
+      colors={['#A6E9ED', '#00666D', '#005B70', '#00B7C3', '#f5f5f5']}
       {...props}
+      // slotProps={{ legend: { hidden: true } }}
     >
-      <PieCenterLabel>Center label</PieCenterLabel>
+      <PieCenterLabel>1000</PieCenterLabel>
     </PieChart>
   )
 }

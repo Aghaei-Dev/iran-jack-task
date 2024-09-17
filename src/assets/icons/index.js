@@ -20,7 +20,11 @@ import Document from './Document'
 import Plus from './Plus'
 import Share from './Share'
 import Bars from './Bars'
+import ArrowDown from './ArrowDown'
+import ArrowUp from './ArrowUp'
 export {
+  ArrowUp,
+  ArrowDown,
   Bars,
   Share,
   Plus,

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
-import { CheckBox, Divider, Tabs } from '../'
+import { CheckBox, Divider, Input, Tabs } from '../'
 import { subNav } from '../../assets/constants'
-import { Bars, More, Share } from '../../assets/icons'
+import { Bars, More, Search, Share } from '../../assets/icons'
 
 export default function SubHeader() {
   return (
@@ -40,8 +40,12 @@ export default function SubHeader() {
         </div>
 
         <div className='search flex-center gap-2'>
-          <button>filter</button>
-          search input
+          <button>Filter</button>
+          <Input
+            small
+            icon={<Search />}
+            placeholder='Search'
+          />
         </div>
       </Wrapper>
     </>
@@ -63,6 +67,13 @@ const Wrapper = styled('header')(() => ({
   '.bars': {
     width: '30px',
     height: '30px',
+  },
+  '.search': {
+    button: {
+      fontFamily: 'inherit',
+      fontWeight: '600',
+      fontSize: '.85rem',
+    },
   },
 
   '@media (width < 814px)': {

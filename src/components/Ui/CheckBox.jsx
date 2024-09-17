@@ -73,7 +73,7 @@ const Wrapper = styled.div`
     content: '';
     width: 100%;
     height: 100%;
-    background: #506eec;
+    background: var(--purple-500);
     display: block;
     transform: scale(0);
     opacity: 1;
@@ -83,12 +83,12 @@ const Wrapper = styled.div`
     padding-left: 8px;
   }
   .cbx:hover span:first-child {
-    border-color: #506eec;
+    border-color: var(--purple-500);
   }
 
   .inp-cbx:checked + .cbx span:first-child {
-    background: #506eec;
-    border-color: #506eec;
+    background: var(--purple-500);
+    border-color: var(--purple-500);
     animation: wave-46 0.4s ease;
   }
   .inp-cbx:checked + .cbx span:first-child svg {

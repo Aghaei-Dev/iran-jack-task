@@ -16,7 +16,7 @@ export default function ChartCard({ title, desc, singleIcon, tabs, array, chart 
           <h1>{title}</h1>
           <p>{desc}</p>
         </div>
-        <div>
+        <div className='flex-between gap-1 icons'>
           {singleIcon
             ? iconsList[3].icon
             : iconsList.map((item) => {
@@ -57,5 +57,12 @@ const Wrapper = styled('article')(() => ({
     fontSize: '1rem',
     alignSelf: 'end',
     marginTop: 'auto',
+  },
+  '.icons': {
+    // background: 'red',
+    svg: {
+      width: '25px',
+      height: '25px',
+    },
   },
 }))

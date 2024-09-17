@@ -1,4 +1,3 @@
-
 export default function ReSize() {
   return (
     <svg

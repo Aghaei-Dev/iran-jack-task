@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
-import { ArrowLeft, ArrowRight, Close, Logo, Maximize, Minimize, More } from '../../assets/icons'
+import { ArrowLeft, ArrowRight, Close, Logo, Maximize, Minimize, More, Search } from '../../assets/icons'
 import { Avatar } from '../Assistance'
 import { avatar } from '../../assets/images'
+import { Input } from '..'
 
 export default function MainHeader() {
   return (
@@ -12,7 +13,10 @@ export default function MainHeader() {
       <section className='flex-center'>
         <ArrowLeft />
         <ArrowRight />
-        searchbar
+        <Input
+          icon={<Search />}
+          placeholder='Search'
+        />
       </section>
       <section className='flex-center gap-2'>
         <More />

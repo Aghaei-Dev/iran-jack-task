@@ -1,13 +1,12 @@
-import * as React from 'react'
 import { BarChart } from '@mui/x-charts/BarChart'
 
 export default function GroupBars({ ...props }) {
   return (
     <BarChart
-      xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
-      series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
-      barLabel='value'
+      xAxis={[{ scaleType: 'band', data: ['XS', 'S', 'M', 'L', 'XL', 'XXl'] }]}
+      series={[{ data: [65, 65, 65, 65, 65, 65] }, { data: [80, 80, 80, 80, 80, 80] }, { data: [30, 30, 30, 30, 30, 30] }]}
       grid={{ horizontal: true }}
+      colors={['#93C5FD', '#1D4ED8', '#888888']}
       {...props}
     />
   )
